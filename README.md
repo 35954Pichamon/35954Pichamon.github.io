@@ -1,2 +1,32 @@
 # 35954Pichamon.github.io
 แนะนำตัวเอง นางสาวพิชามญชุ์ รอดมา
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>หน้าแนะน;าตัวของฉัน</title>
+<style>
+body {
+background-color: #FFCCFF; color: #333;
+text-align: center; padding: 50px;
+
+}
+.card {
+background: white; border-radius: 50px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+max-width: 500px; margin: 0 auto; padding: 30px;
+
+}
+h1 { color: #2c3e50; }
+p { font-size: 18px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="card">
+<h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน </h1>
+<p>สวัสดีค่ะ! ฉันชื่อ <strong>พิชามญชุ์ รอดมา (Pichamon Rodma)</strong></p>
+<p>ขณะนี้กำลังศึกษา/สนใจด้านวิทย์ศาสตร์สุขภาพ </p>
+<p>นี่คือเว็บไซต์แรกของฉันที่โฮสต์บน GitHub Pages!</p>
+</div>
+</body>
+</html>
