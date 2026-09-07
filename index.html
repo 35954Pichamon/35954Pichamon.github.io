@@ -10,7 +10,9 @@
 
     <title>Portfolio | พิชามญชุ์ รอดมา</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+
+          href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap">
 
     <style>
 
@@ -24,21 +26,27 @@
 
             margin: 0;
 
-            font-family: "Prompt", sans-serif;
+            font-family: "Kanit", sans-serif;
 
-            color: #173f5f;
+            background: #f4faff;
 
-            background: #f5faff;
+            color: #23577c;
 
         }
 
-        /* ================= NAVBAR ================= */
+        /* =========================
+
+           NAVBAR
+
+        ========================= */
 
         .navbar {
 
-            height: 70px;
+            height: 72px;
 
-            background: white;
+            margin: 22px 4%;
+
+            padding: 0 35px;
 
             display: flex;
 
@@ -46,9 +54,11 @@
 
             justify-content: space-between;
 
-            padding: 0 7%;
+            background: rgba(255,255,255,0.95);
 
-            box-shadow: 0 2px 15px rgba(30, 80, 110, 0.08);
+            border-radius: 20px;
+
+            box-shadow: 0 5px 20px rgba(45, 100, 135, 0.08);
 
             position: relative;
 
@@ -58,13 +68,13 @@
 
         .logo {
 
-            font-size: 21px;
-
-            font-weight: 700;
-
-            color: #245d83;
+            color: #28658c;
 
             text-decoration: none;
+
+            font-size: 23px;
+
+            font-weight: 600;
 
             letter-spacing: 2px;
 
@@ -74,19 +84,25 @@
 
             display: flex;
 
-            gap: 28px;
+            align-items: center;
+
+            gap: 32px;
 
         }
 
         nav a {
 
-            color: #526f82;
+            color: #527489;
 
             text-decoration: none;
 
-            font-size: 14px;
+            font-size: 15px;
 
-            transition: 0.3s;
+            padding: 9px 15px;
+
+            border-radius: 25px;
+
+            transition: 0.25s;
 
         }
 
@@ -94,37 +110,31 @@
 
         nav a.active {
 
-            color: #1e6797;
+            color: #21618c;
 
-            font-weight: 600;
+            background: #e4f2fc;
 
         }
 
-        /* ================= COVER ================= */
+        /* =========================
+
+           COVER
+
+        ========================= */
 
         .cover {
 
-            min-height: calc(100vh - 70px);
+            min-height: calc(100vh - 116px);
 
             position: relative;
 
             overflow: hidden;
 
-            background:
-
-                radial-gradient(circle at 85% 20%, rgba(96, 166, 207, 0.20) 0, rgba(96, 166, 207, 0) 25%),
-
-                radial-gradient(circle at 10% 85%, rgba(130, 190, 220, 0.18) 0, rgba(130, 190, 220, 0) 28%),
-
-                linear-gradient(135deg, #edf7fd, #ffffff 55%, #e5f3fb);
-
             display: flex;
 
             align-items: center;
 
-            justify-content: center;
-
-            padding: 50px 7%;
+            padding: 50px 8%;
 
         }
 
@@ -134,27 +144,33 @@
 
             max-width: 1100px;
 
+            margin: auto;
+
             display: flex;
 
             align-items: center;
 
             justify-content: space-between;
 
-            gap: 80px;
+            gap: 70px;
 
             position: relative;
 
-            z-index: 3;
+            z-index: 2;
 
         }
 
-        /* ================= TEXT ================= */
+        /* =========================
+
+           LEFT TEXT
+
+        ========================= */
 
         .cover-text {
 
             flex: 1;
 
-            max-width: 560px;
+            max-width: 600px;
 
         }
 
@@ -162,13 +178,13 @@
 
             margin: 0 0 12px;
 
-            color: #3c82a9;
+            color: #4387ae;
 
-            font-size: 15px;
+            font-size: 17px;
 
-            font-weight: 600;
+            font-weight: 500;
 
-            letter-spacing: 4px;
+            letter-spacing: 5px;
 
         }
 
@@ -176,61 +192,69 @@
 
             margin: 0;
 
-            font-size: clamp(45px, 5vw, 68px);
+            color: #1e5478;
+
+            font-size: clamp(45px, 5vw, 65px);
 
             line-height: 1.15;
 
-            color: #173f5f;
+            font-weight: 600;
 
         }
 
         .line {
 
-            width: 85px;
+            width: 75px;
 
             height: 5px;
 
-            margin: 22px 0;
+            margin: 20px 0;
 
-            background: #4389b4;
+            background: #65a5ca;
 
-            border-radius: 20px;
+            border-radius: 10px;
 
         }
 
         .welcome {
 
-            color: #607c8e;
+            margin: 0 0 20px;
 
-            font-size: 17px;
+            color: #607f91;
+
+            font-size: 18px;
 
             line-height: 1.8;
-
-            margin-bottom: 20px;
 
         }
 
         .cover-text h2 {
 
-            margin: 0 0 5px;
+            margin: 0;
 
-            color: #20597c;
+            color: #245d80;
 
-            font-size: 30px;
+            font-size: 31px;
+
+            font-weight: 500;
 
         }
 
         .student {
 
-            margin: 0 0 25px;
+            margin: 5px 0 25px;
 
-            color: #718898;
+            color: #78909f;
 
-            font-size: 14px;
+            font-size: 15px;
 
         }
 
-        /* ================= BUTTON ================= */
+        /* =========================
+
+           BUTTON
+
+        ========================= */
 
         .cover-button {
 
@@ -238,7 +262,7 @@
 
             padding: 12px 25px;
 
-            background: #28698f;
+            background: #397ca5;
 
             color: white;
 
@@ -246,27 +270,31 @@
 
             border-radius: 30px;
 
-            font-size: 14px;
+            font-size: 15px;
 
-            box-shadow: 0 8px 20px rgba(40, 105, 143, 0.20);
+            box-shadow: 0 7px 18px rgba(57,124,165,0.18);
 
-            transition: 0.3s;
+            transition: 0.25s;
 
         }
 
         .cover-button:hover {
 
-            transform: translateY(-3px);
+            background: #28678d;
 
-            background: #174e70;
+            transform: translateY(-2px);
 
         }
 
-        /* ================= PHOTO ================= */
+        /* =========================
+
+           PHOTO
+
+        ========================= */
 
         .cover-photo {
 
-            width: 330px;
+            width: 350px;
 
             display: flex;
 
@@ -280,31 +308,23 @@
 
         .photo-frame {
 
-            width: 235px;
+            width: 245px;
 
-            height: 285px;
+            height: 310px;
 
             padding: 10px;
 
             background: white;
 
-            border: 4px solid #4d91b8;
+            border: 3px solid #72acd0;
 
-            border-radius: 20px;
+            border-radius: 18px;
 
             box-shadow:
 
-                0 15px 35px rgba(40, 90, 120, 0.18);
-
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
+                0 15px 30px rgba(45, 100, 135, 0.15);
 
             position: relative;
-
-            z-index: 3;
 
         }
 
@@ -314,17 +334,27 @@
 
             height: 100%;
 
+            display: block;
+
+            /* สำคัญมาก
+
+               รูปจะไม่โดนตัด */
+
             object-fit: contain;
 
             object-position: center;
 
-            border-radius: 12px;
+            border-radius: 10px;
 
-            background: #f3f8fb;
+            background: #f5f9fc;
 
         }
 
-        /* ================= PHOTO DECORATION ================= */
+        /* =========================
+
+           เรียบ ๆ ตกแต่งข้างรูป
+
+        ========================= */
 
         .photo-frame::before {
 
@@ -332,19 +362,17 @@
 
             position: absolute;
 
-            width: 45px;
+            width: 42px;
 
-            height: 45px;
+            height: 42px;
 
             border-radius: 50%;
 
-            border: 8px solid rgba(76, 145, 184, 0.12);
+            border: 7px solid #d9edf8;
 
-            top: -25px;
+            top: -22px;
 
-            right: -25px;
-
-            z-index: -1;
+            right: -22px;
 
         }
 
@@ -354,111 +382,101 @@
 
             position: absolute;
 
-            width: 18px;
+            width: 12px;
 
-            height: 18px;
-
-            border-radius: 50%;
-
-            background: rgba(65, 135, 175, 0.35);
-
-            bottom: -25px;
-
-            left: -25px;
-
-        }
-
-        /* ================= BACKGROUND DECORATION ================= */
-
-        .circle {
-
-            position: absolute;
+            height: 12px;
 
             border-radius: 50%;
 
-            z-index: 1;
+            background: #7fb6d6;
+
+            bottom: -18px;
+
+            left: -18px;
 
         }
 
-        .circle-1 {
+        /* =========================
 
-            width: 330px;
+           BACKGROUND DECORATION
 
-            height: 330px;
+           เรียบ ๆ
 
-            right: -120px;
+        ========================= */
 
-            top: -120px;
-
-            border: 45px solid rgba(65, 135, 175, 0.08);
-
-        }
-
-        .circle-2 {
-
-            width: 220px;
-
-            height: 220px;
-
-            left: -100px;
-
-            bottom: -100px;
-
-            background: rgba(87, 157, 195, 0.08);
-
-        }
-
-        /* จุดตกแต่ง */
-
-        .dot-pattern {
+        .decor-circle-1 {
 
             position: absolute;
 
-            width: 150px;
+            width: 270px;
 
-            height: 150px;
+            height: 270px;
 
-            right: 6%;
+            border-radius: 50%;
 
-            bottom: 8%;
+            background: #e3f3fc;
+
+            right: -110px;
+
+            top: -90px;
+
+            z-index: 0;
+
+        }
+
+        .decor-circle-2 {
+
+            position: absolute;
+
+            width: 190px;
+
+            height: 190px;
+
+            border-radius: 50%;
+
+            background: #eaf6fc;
+
+            left: -90px;
+
+            bottom: -90px;
+
+            z-index: 0;
+
+        }
+
+        .dots {
+
+            position: absolute;
+
+            width: 90px;
+
+            height: 90px;
+
+            right: 7%;
+
+            bottom: 12%;
 
             background-image:
 
-                radial-gradient(#4b8caf 2px, transparent 2px);
+                radial-gradient(#78afd0 2px, transparent 2px);
 
-            background-size: 18px 18px;
+            background-size: 16px 16px;
 
-            opacity: 0.25;
-
-        }
-
-        /* เส้นตกแต่ง */
-
-        .decor-line {
-
-            position: absolute;
-
-            width: 180px;
-
-            height: 2px;
-
-            background: rgba(62, 133, 174, 0.18);
-
-            transform: rotate(-35deg);
-
-            left: 3%;
-
-            top: 25%;
+            opacity: 0.35;
 
         }
 
-        /* ================= FOOTER ================= */
+        /* =========================
+
+           FOOTER
+
+        ========================= */
 
         footer {
 
             position: absolute;
 
-            bottom: 15px;
+            bottom: 12px;
 
             left: 0;
 
@@ -466,15 +484,17 @@
 
             text-align: center;
 
-            color: #78909e;
+            color: #7895a5;
 
             font-size: 12px;
 
-            z-index: 4;
-
         }
 
-        /* ================= MOBILE ================= */
+        /* =========================
+
+           MOBILE
+
+        ========================= */
 
         @media (max-width: 850px) {
 
@@ -482,17 +502,19 @@
 
                 height: auto;
 
-                padding: 18px 20px;
+                margin: 12px;
+
+                padding: 15px;
 
                 flex-direction: column;
 
-                gap: 12px;
+                gap: 10px;
 
             }
 
             nav {
 
-                gap: 13px;
+                gap: 5px;
 
                 flex-wrap: wrap;
 
@@ -504,13 +526,15 @@
 
                 font-size: 12px;
 
+                padding: 7px 10px;
+
             }
 
             .cover {
 
-                min-height: calc(100vh - 105px);
+                min-height: calc(100vh - 150px);
 
-                padding: 40px 20px 70px;
+                padding: 35px 20px 70px;
 
             }
 
@@ -530,15 +554,21 @@
 
             }
 
-            .line {
+            .small-title {
 
-                margin: 18px auto;
+                font-size: 14px;
 
             }
 
             .cover-text h1 {
 
-                font-size: 43px;
+                font-size: 42px;
+
+            }
+
+            .line {
+
+                margin: 18px auto;
 
             }
 
@@ -550,29 +580,21 @@
 
             .cover-photo {
 
-                width: 260px;
+                width: 100%;
 
             }
 
             .photo-frame {
 
-                width: 200px;
+                width: 195px;
 
                 height: 245px;
 
             }
 
-            .dot-pattern {
+            footer {
 
-                right: -20px;
-
-                bottom: 10%;
-
-            }
-
-            .decor-line {
-
-                display: none;
+                bottom: 7px;
 
             }
 
@@ -584,7 +606,11 @@
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- =========================
+
+     MENU
+
+========================= -->
 
 <header class="navbar">
 
@@ -630,23 +656,25 @@
 
 </header>
 
-<!-- ================= COVER ================= -->
+<!-- =========================
+
+     หน้าปก
+
+========================= -->
 
 <main class="cover">
 
     <!-- ตกแต่งพื้นหลัง -->
 
-    <div class="circle circle-1"></div>
+    <div class="decor-circle-1"></div>
 
-    <div class="circle circle-2"></div>
+    <div class="decor-circle-2"></div>
 
-    <div class="dot-pattern"></div>
-
-    <div class="decor-line"></div>
+    <div class="dots"></div>
 
     <div class="cover-content">
 
-        <!-- ข้อความ -->
+        <!-- ข้อความด้านซ้าย -->
 
         <section class="cover-text">
 
@@ -692,7 +720,7 @@
 
         </section>
 
-        <!-- รูป -->
+        <!-- รูปด้านขวา -->
 
         <section class="cover-photo">
 
