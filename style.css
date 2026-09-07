@@ -1001,3 +1001,18 @@ footer {
     margin: 0 auto 10px;
 
 }
+.cover .cover-image {
+
+    width: 40px !important;
+
+    height: 40px !important;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+
+    margin: 0 auto 15px;
+
+}
