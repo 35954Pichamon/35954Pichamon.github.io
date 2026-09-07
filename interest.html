@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ผลงานและกิจกรรม | พิชามญชุ์ รอดมา</title>
+    <title>ความสนใจ | พิชามญชุ์ รอดมา</title>
 
     <link rel="stylesheet"
 
@@ -118,7 +118,7 @@
 
             text-align: center;
 
-            padding: 45px 20px 25px;
+            padding: 40px 20px 25px;
 
         }
 
@@ -168,83 +168,81 @@
 
         }
 
-        /* ================= CONTENT ================= */
+        /* ================= MAIN ================= */
 
-        .activities {
+        .interest-section {
 
             width: 90%;
 
-            max-width: 1100px;
+            max-width: 1050px;
 
-            margin: 20px auto 70px;
+            margin: 25px auto 70px;
 
             display: grid;
 
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 1fr;
 
-            gap: 28px;
+            gap: 35px;
+
+            align-items: center;
+
+        }
+
+        /* ================= รูป ================= */
+
+        .interest-image-box {
+
+            background: white;
+
+            padding: 12px;
+
+            border-radius: 22px;
+
+            border: 2px solid #d8ebf6;
+
+            box-shadow: 0 10px 25px rgba(45, 100, 135, 0.10);
 
             position: relative;
 
         }
 
-        /* ================= CARD ================= */
-
-        .activity-card {
-
-            background: white;
-
-            border-radius: 20px;
-
-            overflow: hidden;
-
-            box-shadow: 0 8px 25px rgba(45, 100, 135, 0.09);
-
-            border: 1px solid #e4f1f8;
-
-            transition: 0.25s;
-
-        }
-
-        .activity-card:hover {
-
-            transform: translateY(-5px);
-
-            box-shadow: 0 15px 30px rgba(45, 100, 135, 0.14);
-
-        }
-
-        /* ================= IMAGE ================= */
-
-        .activity-image {
+        .interest-image {
 
             width: 100%;
 
-            height: 230px;
+            height: 360px;
 
             display: block;
 
             object-fit: cover;
 
-            background: #eaf5fb;
+            border-radius: 15px;
 
         }
 
-        /* ================= TEXT ================= */
+        /* ================= ข้อความ ================= */
 
-        .activity-content {
+        .interest-content {
 
-            padding: 22px 24px 25px;
+            background: white;
+
+            padding: 35px;
+
+            border-radius: 22px;
+
+            border: 1px solid #e1eef5;
+
+            box-shadow: 0 10px 25px rgba(45, 100, 135, 0.08);
 
         }
 
-        .number {
+        .interest-number {
 
             display: inline-block;
 
-            padding: 4px 12px;
+            padding: 5px 15px;
 
-            margin-bottom: 10px;
+            margin-bottom: 15px;
 
             background: #e5f3fb;
 
@@ -252,39 +250,71 @@
 
             border-radius: 20px;
 
-            font-size: 12px;
+            font-size: 13px;
 
         }
 
-        .activity-content h2 {
+        .interest-content h2 {
 
-            margin: 0 0 12px;
+            margin: 0 0 18px;
 
-            color: #235d80;
+            color: #20597c;
 
-            font-size: 21px;
+            font-size: 30px;
 
             font-weight: 500;
 
-            line-height: 1.5;
-
         }
 
-        .activity-content p {
+        .interest-content p {
 
-            margin: 0;
+            margin: 0 0 15px;
 
             color: #687f8d;
 
+            font-size: 16px;
+
+            line-height: 1.9;
+
+        }
+
+        /* ================= จุดเด่น ================= */
+
+        .interest-list {
+
+            margin-top: 20px;
+
+            padding: 0;
+
+            list-style: none;
+
+        }
+
+        .interest-list li {
+
+            margin-bottom: 10px;
+
+            color: #527489;
+
             font-size: 15px;
 
-            line-height: 1.8;
+        }
+
+        .interest-list li::before {
+
+            content: "✓";
+
+            color: #4b91b8;
+
+            font-weight: bold;
+
+            margin-right: 10px;
 
         }
 
         /* ================= DECORATION ================= */
 
-        .decor-1 {
+        .circle-1 {
 
             position: fixed;
 
@@ -298,25 +328,25 @@
 
             right: -110px;
 
-            top: 160px;
+            top: 150px;
 
             z-index: -1;
 
         }
 
-        .decor-2 {
+        .circle-2 {
 
             position: fixed;
 
-            width: 180px;
+            width: 170px;
 
-            height: 180px;
+            height: 170px;
 
             border-radius: 50%;
 
             background: #eaf7fd;
 
-            left: -100px;
+            left: -90px;
 
             bottom: 30px;
 
@@ -388,7 +418,7 @@
 
             }
 
-            .activities {
+            .interest-section {
 
                 grid-template-columns: 1fr;
 
@@ -398,9 +428,21 @@
 
             }
 
-            .activity-image {
+            .interest-image {
 
-                height: 220px;
+                height: 300px;
+
+            }
+
+            .interest-content {
+
+                padding: 25px;
+
+            }
+
+            .interest-content h2 {
+
+                font-size: 27px;
 
             }
 
@@ -460,205 +502,103 @@
 
 <!-- ================= DECORATION ================= -->
 
-<div class="decor-1"></div>
+<div class="circle-1"></div>
 
-<div class="decor-2"></div>
+<div class="circle-2"></div>
 
 <!-- ================= HEADER ================= -->
 
 <section class="page-header">
 
-    <p>MY ACHIEVEMENTS</p>
+    <p>MY INTEREST</p>
 
-    <h1>ผลงานและกิจกรรม</h1>
+    <h1>ความสนใจและเป้าหมาย</h1>
 
     <div class="page-line"></div>
 
     <span>
 
-        ผลงาน ประสบการณ์ และกิจกรรมที่ภาคภูมิใจ
+        คณะที่สนใจและเป้าหมายในการศึกษาต่อ
 
     </span>
 
 </section>
 
-<!-- ================= ACTIVITIES ================= -->
+<!-- ================= CONTENT ================= -->
 
-<section class="activities">
+<section class="interest-section">
 
-    <!-- ผลงานที่ 1 -->
+    <!-- รูป -->
 
-    <article class="activity-card">
-
-        <img
-
-            src="airplane.jpg"
-
-            alt="การแข่งขันเครื่องบินพลังยาง"
-
-            class="activity-image"
-
-        >
-
-        <div class="activity-content">
-
-            <span class="number">
-
-                ผลงานที่ 01
-
-            </span>
-
-            <h2>
-
-                การแข่งขันเครื่องบินพลังยาง
-
-            </h2>
-
-            <p>
-
-                ได้รับรางวัลเหรียญทอง 2 ปีซ้อน
-
-                ทั้งในระดับภาคและระดับประเทศ
-
-                จากการแข่งขันเครื่องบินพลังยาง
-
-            </p>
-
-        </div>
-
-    </article>
-
-    <!-- ผลงานที่ 2 -->
-
-    <article class="activity-card">
+    <div class="interest-image-box">
 
         <img
 
-            src="poster.jpg"
+            src="veterinary.jpg"
 
-            alt="การนำเสนอผลงานโครงงานนวัตกรรม"
+            alt="คณะสัตวแพทยศาสตร์"
 
-            class="activity-image"
-
-        >
-
-        <div class="activity-content">
-
-            <span class="number">
-
-                ผลงานที่ 02
-
-            </span>
-
-            <h2>
-
-                การนำเสนอผลงานโครงงานนวัตกรรม
-
-            </h2>
-
-            <p>
-
-                ได้รับรางวัลชนะเลิศ อันดับ 2
-
-                จากการประกวดแข่งขันการนำเสนอผลงาน
-
-                โครงงานนวัตกรรมในรูปแบบโปสเตอร์
-
-            </p>
-
-        </div>
-
-    </article>
-
-    <!-- ผลงานที่ 3 -->
-
-    <article class="activity-card">
-
-        <img
-
-            src="student-council-award.jpg"
-
-            alt="การแข่งขันกิจกรรมสภานักเรียน"
-
-            class="activity-image"
+            class="interest-image"
 
         >
 
-        <div class="activity-content">
+    </div>
 
-            <span class="number">
+    <!-- ข้อความ -->
 
-                ผลงานที่ 03
+    <div class="interest-content">
 
-            </span>
+        <span class="interest-number">
 
-            <h2>
+            MY FUTURE
 
-                การแข่งขันกิจกรรมสภานักเรียน
+        </span>
 
-            </h2>
+        <h2>
 
-            <p>
+            คณะสัตวแพทยศาสตร์
 
-                ได้รับรางวัลเหรียญทอง
+        </h2>
 
-                กิจกรรมการแข่งขันกิจกรรมสภานักเรียน
+        <p>
 
-                ระดับชั้น ม.1 - ม.6
+            ฉันมีความสนใจศึกษาต่อใน
 
-                งานศิลปหัตถกรรมนักเรียน ครั้งที่ 73
+            <strong>คณะสัตวแพทยศาสตร์</strong>
 
-                ปีการศึกษา 2568
+            เนื่องจากเป็นสาขาที่ได้เรียนรู้เกี่ยวกับสัตว์
 
-            </p>
+            ทั้งด้านร่างกาย สุขภาพ การป้องกันโรค
 
-        </div>
+            และการรักษาสัตว์
 
-    </article>
+        </p>
 
-    <!-- ผลงานที่ 4 -->
+        <p>
 
-    <article class="activity-card">
+            ฉันชอบสัตว์และสนใจการดูแลสัตว์
 
-        <img
+            จึงอยากพัฒนาความรู้และทักษะของตนเอง
 
-            src="student-council.jpg"
+            เพื่อนำไปต่อยอดสู่การศึกษาต่อ
 
-            alt="คณะกรรมการสภานักเรียน"
+            และประกอบอาชีพในอนาคต
 
-            class="activity-image"
+        </p>
 
-        >
+        <ul class="interest-list">
 
-        <div class="activity-content">
+            <li>สนใจด้านสุขภาพและการดูแลสัตว์</li>
 
-            <span class="number">
+            <li>ชอบเรียนรู้เกี่ยวกับวิทยาศาสตร์และชีววิทยา</li>
 
-                ผลงานที่ 04
+            <li>ต้องการพัฒนาทักษะด้านการดูแลสัตว์</li>
 
-            </span>
+            <li>มีเป้าหมายศึกษาต่อด้านสัตวแพทยศาสตร์</li>
 
-            <h2>
+        </ul>
 
-                คณะกรรมการสภานักเรียน
-
-            </h2>
-
-            <p>
-
-                ได้ปฏิบัติหน้าที่คณะกรรมการ
-
-                สภานักเรียน ประจำปีการศึกษา 2568
-
-                มีส่วนร่วมในการดำเนินงาน
-
-                และกิจกรรมต่าง ๆ ของโรงเรียน
-
-            </p>
-
-        </div>
-
-    </article>
+    </div>
 
 </section>
 
