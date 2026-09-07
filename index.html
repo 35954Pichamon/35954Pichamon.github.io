@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>พิชามญชุ์ รอดมา | Portfolio</title>
+    <title>ความสนใจ | พิชามญชุ์ รอดมา</title>
 
     <style>
 
@@ -28,11 +28,9 @@
 
             font-family: 'Prompt', sans-serif;
 
-            background: #edf6fc;
+            background: #eef6fc;
 
-            color: #234b68;
-
-            min-height: 100vh;
+            color: #214a6d;
 
         }
 
@@ -40,9 +38,9 @@
 
         .navbar {
 
-            height: 72px;
+            height: 75px;
 
-            background: #ffffff;
+            background: white;
 
             display: flex;
 
@@ -52,11 +50,11 @@
 
             padding: 0 7%;
 
-            box-shadow: 0 3px 18px rgba(40, 90, 130, 0.10);
+            box-shadow: 0 3px 15px rgba(40, 90, 130, 0.08);
 
             position: relative;
 
-            z-index: 20;
+            z-index: 10;
 
         }
 
@@ -64,11 +62,11 @@
 
             text-decoration: none;
 
-            color: #1e4d70;
+            color: #1f4f75;
 
             font-family: 'Kanit', sans-serif;
 
-            font-size: 24px;
+            font-size: 25px;
 
             font-weight: 600;
 
@@ -80,7 +78,7 @@
 
             display: flex;
 
-            gap: 30px;
+            gap: 32px;
 
         }
 
@@ -88,9 +86,11 @@
 
             text-decoration: none;
 
-            color: #6b8294;
+            color: #667f92;
 
-            font-size: 15px;
+            font-size: 16px;
+
+            padding: 10px 0;
 
             transition: 0.3s;
 
@@ -100,7 +100,15 @@
 
         nav a.active {
 
-            color: #2778ae;
+            color: #2875a8;
+
+        }
+
+        nav a.active {
+
+            font-weight: 600;
+
+            border-bottom: 3px solid #5797c0;
 
         }
 
@@ -112,297 +120,117 @@
 
             background: none;
 
-            font-size: 27px;
+            font-size: 28px;
 
             color: #245b7e;
 
         }
 
-        /* ================= COVER ================= */
+        /* ================= PAGE ================= */
 
-        .cover {
+        .page {
 
-            min-height: calc(100vh - 72px);
+            min-height: calc(100vh - 75px);
+
+            padding: 75px 7% 90px;
 
             position: relative;
 
             overflow: hidden;
 
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            padding: 45px 20px;
-
         }
 
         /* ================= DECORATION ================= */
 
-        .circle {
+        .bg-circle {
 
             position: absolute;
 
             border-radius: 50%;
+
+            z-index: -1;
 
         }
 
         .circle-1 {
 
-            width: 380px;
+            width: 300px;
 
-            height: 380px;
+            height: 300px;
 
-            background: #d8ecf9;
+            background: #d9edf9;
 
-            left: -170px;
+            left: -130px;
 
-            top: 50px;
+            top: 120px;
 
         }
 
         .circle-2 {
 
-            width: 270px;
+            width: 250px;
 
-            height: 270px;
+            height: 250px;
 
-            background: #c9e4f4;
+            background: #d0e8f5;
 
-            right: -110px;
+            right: -100px;
 
-            bottom: 20px;
+            bottom: 50px;
 
         }
 
         .circle-3 {
 
-            width: 90px;
+            width: 80px;
 
-            height: 90px;
+            height: 80px;
 
-            border: 14px solid #d3e9f6;
-
-            right: 12%;
-
-            top: 85px;
-
-        }
-
-        .dot {
-
-            position: absolute;
-
-            width: 12px;
-
-            height: 12px;
+            border: 12px solid #d3e8f5;
 
             border-radius: 50%;
 
-            background: #a9cee4;
+            position: absolute;
+
+            right: 15%;
+
+            top: 100px;
 
         }
 
-        .dot-1 {
+        /* ================= TITLE ================= */
 
-            left: 15%;
-
-            top: 22%;
-
-        }
-
-        .dot-2 {
-
-            right: 18%;
-
-            bottom: 25%;
-
-        }
-
-        .dot-3 {
-
-            left: 20%;
-
-            bottom: 15%;
-
-        }
-
-        /* ================= MAIN BOX ================= */
-
-        .cover-box {
-
-            width: min(1000px, 94%);
-
-            min-height: 600px;
-
-            background: rgba(255, 255, 255, 0.97);
-
-            border-radius: 35px;
-
-            position: relative;
-
-            z-index: 5;
-
-            display: flex;
-
-            flex-direction: column;
-
-            align-items: center;
-
-            justify-content: center;
+        .page-title {
 
             text-align: center;
 
-            padding: 55px 30px;
+            max-width: 750px;
 
-            border: 1px solid #d5e8f3;
-
-            box-shadow:
-
-                0 20px 55px rgba(39, 91, 126, 0.14);
+            margin: 0 auto 65px;
 
         }
 
-        /* มุมทั้ง 4 */
-
-        .corner {
-
-            position: absolute;
-
-            width: 55px;
-
-            height: 55px;
-
-            border-color: #a8cde2;
-
-        }
-
-        .corner-tl {
-
-            top: 24px;
-
-            left: 24px;
-
-            border-top: 3px solid;
-
-            border-left: 3px solid;
-
-            border-radius: 14px 0 0 0;
-
-        }
-
-        .corner-tr {
-
-            top: 24px;
-
-            right: 24px;
-
-            border-top: 3px solid;
-
-            border-right: 3px solid;
-
-            border-radius: 0 14px 0 0;
-
-        }
-
-        .corner-bl {
-
-            bottom: 24px;
-
-            left: 24px;
-
-            border-bottom: 3px solid;
-
-            border-left: 3px solid;
-
-            border-radius: 0 0 0 14px;
-
-        }
-
-        .corner-br {
-
-            bottom: 24px;
-
-            right: 24px;
-
-            border-bottom: 3px solid;
-
-            border-right: 3px solid;
-
-            border-radius: 0 0 14px 0;
-
-        }
-
-        /* ================= TOP LINE ================= */
-
-        .top-line {
-
-            width: 70px;
-
-            height: 4px;
-
-            background: #4388b5;
-
-            border-radius: 20px;
-
-            margin-bottom: 22px;
-
-        }
-
-        /* ================= PHOTO ================= */
-
-        .cover-image {
-
-            width: 130px !important;
-
-            height: 130px !important;
-
-            object-fit: cover;
-
-            border-radius: 50%;
-
-            border: 5px solid #ffffff;
-
-            box-shadow:
-
-                0 8px 25px rgba(34, 83, 115, 0.20);
-
-            display: block;
-
-            margin-bottom: 20px;
-
-        }
-
-        /* ================= TEXT ================= */
-
-        .subtitle {
+        .small-title {
 
             font-family: 'Kanit', sans-serif;
 
             font-size: 17px;
 
-            letter-spacing: 5px;
+            letter-spacing: 4px;
 
-            color: #6d93aa;
+            color: #5b8aad;
 
-            margin-bottom: 8px;
+            margin-bottom: 12px;
 
         }
 
-        .main-title {
+        .page-title h1 {
 
             font-family: 'Kanit', sans-serif;
 
-            font-size: clamp(55px, 9vw, 95px);
+            font-size: clamp(42px, 6vw, 68px);
 
-            font-weight: 600;
-
-            letter-spacing: 7px;
-
-            line-height: 1;
-
-            color: #1f5279;
+            color: #1d4770;
 
             margin-bottom: 20px;
 
@@ -410,123 +238,177 @@
 
         .title-line {
 
-            width: 250px;
+            width: 70px;
 
-            height: 2px;
+            height: 4px;
 
-            background: #bdd9e9;
+            background: #5798c2;
 
-            margin-bottom: 22px;
+            border-radius: 10px;
 
-        }
-
-        .name {
-
-            font-family: 'Kanit', sans-serif;
-
-            font-size: 29px;
-
-            font-weight: 500;
-
-            color: #234f6d;
-
-            margin-bottom: 4px;
+            margin: 0 auto 20px;
 
         }
 
-        .student {
+        .page-title p:last-child {
 
-            color: #7b92a2;
+            color: #72899a;
 
-            font-size: 16px;
-
-            margin-bottom: 25px;
+            font-size: 17px;
 
         }
 
-        /* ================= TAGS ================= */
+        /* ================= INTEREST GRID ================= */
 
-        .tags {
+        .interest-grid {
 
-            display: flex;
+            max-width: 1150px;
 
-            flex-wrap: wrap;
+            margin: auto;
 
-            justify-content: center;
+            display: grid;
 
-            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
 
-            margin-bottom: 25px;
-
-        }
-
-        .tag {
-
-            padding: 7px 18px;
-
-            border-radius: 30px;
-
-            background: #edf7fc;
-
-            border: 1px solid #c8e0ed;
-
-            color: #3e7597;
-
-            font-size: 14px;
+            gap: 25px;
 
         }
 
-        /* ================= DESCRIPTION ================= */
+        /* ================= CARD ================= */
 
-        .welcome {
+        .interest-card {
 
-            max-width: 580px;
+            background: rgba(255, 255, 255, 0.96);
 
-            color: #7b8f9d;
+            border: 1px solid #d6e8f2;
 
-            font-size: 15px;
+            border-radius: 25px;
 
-            line-height: 1.9;
+            padding: 30px 25px;
+
+            min-height: 250px;
+
+            box-shadow: 0 10px 30px rgba(45, 95, 130, 0.08);
+
+            transition: 0.3s;
 
         }
 
-        /* ================= BOTTOM DECORATION ================= */
+        .interest-card:hover {
 
-        .mini-line {
+            transform: translateY(-6px);
+
+            box-shadow: 0 15px 35px rgba(45, 95, 130, 0.13);
+
+        }
+
+        /* ICON */
+
+        .interest-icon {
+
+            width: 65px;
+
+            height: 65px;
+
+            background: #e8f4fb;
+
+            border-radius: 18px;
 
             display: flex;
 
             align-items: center;
 
-            gap: 8px;
+            justify-content: center;
 
-            margin-top: 25px;
+            font-size: 32px;
 
-        }
-
-        .mini-line span {
-
-            width: 25px;
-
-            height: 3px;
-
-            border-radius: 10px;
-
-            background: #b5d5e7;
+            margin-bottom: 20px;
 
         }
 
-        .mini-line span:nth-child(2) {
+        .interest-card h2 {
 
-            width: 45px;
+            font-family: 'Kanit', sans-serif;
 
-            background: #78abc8;
+            font-size: 24px;
+
+            color: #214d70;
+
+            margin-bottom: 10px;
+
+        }
+
+        .interest-card p {
+
+            color: #728797;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+
+        }
+
+        /* ================= GOAL ================= */
+
+        .goal {
+
+            max-width: 900px;
+
+            margin: 55px auto 0;
+
+            background: white;
+
+            border-radius: 25px;
+
+            padding: 35px 40px;
+
+            text-align: center;
+
+            border: 1px solid #d6e8f2;
+
+            box-shadow: 0 10px 30px rgba(45, 95, 130, 0.08);
+
+        }
+
+        .goal h2 {
+
+            font-family: 'Kanit', sans-serif;
+
+            font-size: 28px;
+
+            color: #245477;
+
+            margin-bottom: 12px;
+
+        }
+
+        .goal p {
+
+            color: #728797;
+
+            line-height: 1.9;
+
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+
+            background: #1e4d70;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 22px;
+
+            font-size: 14px;
 
         }
 
         /* ================= MOBILE ================= */
 
-        @media (max-width: 800px) {
+        @media (max-width: 850px) {
 
             .navbar {
 
@@ -546,59 +428,27 @@
 
             }
 
-            .cover {
+            .page {
 
-                padding: 30px 15px;
-
-            }
-
-            .cover-box {
-
-                min-height: 560px;
-
-                padding: 45px 20px;
+                padding: 55px 20px 70px;
 
             }
 
-            .main-title {
+            .interest-grid {
 
-                font-size: 52px;
-
-                letter-spacing: 4px;
+                grid-template-columns: 1fr;
 
             }
 
-            .name {
+            .interest-card {
 
-                font-size: 24px;
-
-            }
-
-            .cover-image {
-
-                width: 120px !important;
-
-                height: 120px !important;
+                min-height: auto;
 
             }
 
-            .circle-1 {
+            .goal {
 
-                width: 240px;
-
-                height: 240px;
-
-                left: -130px;
-
-            }
-
-            .circle-2 {
-
-                width: 180px;
-
-                height: 180px;
-
-                right: -90px;
+                padding: 30px 22px;
 
             }
 
@@ -614,7 +464,7 @@
 
     <header class="navbar">
 
-        <a href="index.html" class="logo">
+        <a href="./" class="logo">
 
             PORTFOLIO
 
@@ -628,11 +478,15 @@
 
         <nav>
 
-            <a href="index.html" class="active">
+            <!-- หน้าแรก -->
+
+            <a href="./">
 
                 หน้าแรก
 
             </a>
+
+            <!-- ประวัติ -->
 
             <a href="profile.html">
 
@@ -640,17 +494,23 @@
 
             </a>
 
-            <a href="interest.html">
+            <!-- หน้าปัจจุบัน -->
+
+            <a href="interest.html" class="active">
 
                 ความสนใจ
 
             </a>
+
+            <!-- กิจกรรม -->
 
             <a href="activities.html">
 
                 กิจกรรมและผลงาน
 
             </a>
+
+            <!-- ติดต่อ -->
 
             <a href="contact.html">
 
@@ -662,135 +522,239 @@
 
     </header>
 
-    <!-- ================= COVER ================= -->
+    <!-- ================= MAIN ================= -->
 
-    <main class="cover">
+    <main class="page">
 
         <!-- ตกแต่งพื้นหลัง -->
 
-        <div class="circle circle-1"></div>
+        <div class="bg-circle circle-1"></div>
 
-        <div class="circle circle-2"></div>
+        <div class="bg-circle circle-2"></div>
 
-        <div class="circle circle-3"></div>
+        <div class="circle-3"></div>
 
-        <div class="dot dot-1"></div>
+        <!-- ================= TITLE ================= -->
 
-        <div class="dot dot-2"></div>
+        <section class="page-title">
 
-        <div class="dot dot-3"></div>
+            <p class="small-title">
 
-        <!-- กล่องหน้าปก -->
-
-        <section class="cover-box">
-
-            <!-- มุมตกแต่ง -->
-
-            <div class="corner corner-tl"></div>
-
-            <div class="corner corner-tr"></div>
-
-            <div class="corner corner-bl"></div>
-
-            <div class="corner corner-br"></div>
-
-            <!-- เส้นด้านบน -->
-
-            <div class="top-line"></div>
-
-            <!-- รูป -->
-
-            <img
-
-                src="71C32957-C1D7-4CF0-8DD6-E4A524ECE2E8.png"
-
-                alt="พิชามญชุ์ รอดมา"
-
-                class="cover-image"
-
-            >
-
-            <!-- หัวข้อ -->
-
-            <p class="subtitle">
-
-                STUDENT PORTFOLIO
+                MY INTERESTS
 
             </p>
 
-            <h1 class="main-title">
+            <h1>
 
-                PORTFOLIO
+                ความสนใจของฉัน
 
             </h1>
 
             <div class="title-line"></div>
 
-            <!-- ชื่อ -->
+            <p>
 
-            <h2 class="name">
-
-                พิชามญชุ์ รอดมา
-
-            </h2>
-
-            <p class="student">
-
-                แฟ้มสะสมผลงาน
+                สิ่งที่ฉันสนใจและอยากเรียนรู้เพิ่มเติม
 
             </p>
 
-            <!-- ป้าย -->
+        </section>
 
-            <div class="tags">
+        <!-- ================= CARDS ================= -->
 
-                <span class="tag">
+        <section class="interest-grid">
 
-                    Education
+            <!-- 1 -->
 
-                </span>
+            <div class="interest-card">
 
-                <span class="tag">
+                <div class="interest-icon">
 
-                    Activities
+                    🐶
 
-                </span>
+                </div>
 
-                <span class="tag">
+                <h2>
 
-                    My Future
+                    สัตว์และการดูแลสัตว์
 
-                </span>
+                </h2>
+
+                <p>
+
+                    ฉันสนใจเกี่ยวกับสัตว์ ชอบเรียนรู้พฤติกรรม
+
+                    การดูแลสุขภาพ และการดูแลสัตว์ให้มีคุณภาพชีวิตที่ดี
+
+                </p>
 
             </div>
 
-            <!-- คำอธิบาย -->
+            <!-- 2 -->
 
-            <p class="welcome">
+            <div class="interest-card">
 
-                แฟ้มสะสมผลงานที่รวบรวมประสบการณ์
+                <div class="interest-icon">
 
-                กิจกรรม ความสนใจ และผลงาน
+                    🩺
 
-                เพื่อสะท้อนการเรียนรู้และการพัฒนาตนเอง
+                </div>
 
-            </p>
+                <h2>
 
-            <!-- เส้นตกแต่ง -->
+                    สัตวแพทยศาสตร์
 
-            <div class="mini-line">
+                </h2>
 
-                <span></span>
+                <p>
 
-                <span></span>
+                    สนใจการเรียนรู้เกี่ยวกับการรักษาโรค
 
-                <span></span>
+                    การป้องกันโรค และการดูแลสุขภาพของสัตว์
+
+                </p>
+
+            </div>
+
+            <!-- 3 -->
+
+            <div class="interest-card">
+
+                <div class="interest-icon">
+
+                    🔬
+
+                </div>
+
+                <h2>
+
+                    วิทยาศาสตร์
+
+                </h2>
+
+                <p>
+
+                    สนใจการทดลองและการค้นคว้าทางวิทยาศาสตร์
+
+                    รวมถึงการนำความรู้มาใช้ในการแก้ปัญหา
+
+                </p>
+
+            </div>
+
+            <!-- 4 -->
+
+            <div class="interest-card">
+
+                <div class="interest-icon">
+
+                    📚
+
+                </div>
+
+                <h2>
+
+                    การเรียนรู้
+
+                </h2>
+
+                <p>
+
+                    ชอบเรียนรู้สิ่งใหม่ ๆ และพัฒนาความรู้
+
+                    เพื่อนำไปต่อยอดในการเรียนและการทำงานในอนาคต
+
+                </p>
+
+            </div>
+
+            <!-- 5 -->
+
+            <div class="interest-card">
+
+                <div class="interest-icon">
+
+                    🌱
+
+                </div>
+
+                <h2>
+
+                    การพัฒนาตนเอง
+
+                </h2>
+
+                <p>
+
+                    ให้ความสำคัญกับการพัฒนาทักษะของตนเอง
+
+                    ทั้งด้านการเรียน การสื่อสาร และการทำงานร่วมกับผู้อื่น
+
+                </p>
+
+            </div>
+
+            <!-- 6 -->
+
+            <div class="interest-card">
+
+                <div class="interest-icon">
+
+                    💙
+
+                </div>
+
+                <h2>
+
+                    งานอาสา
+
+                </h2>
+
+                <p>
+
+                    สนใจการทำกิจกรรมเพื่อช่วยเหลือผู้อื่น
+
+                    และเรียนรู้ประสบการณ์จากการทำงานร่วมกับคนอื่น
+
+                </p>
 
             </div>
 
         </section>
 
+        <!-- ================= GOAL ================= -->
+
+        <section class="goal">
+
+            <h2>
+
+                เป้าหมายของฉัน
+
+            </h2>
+
+            <p>
+
+                ฉันต้องการนำสิ่งที่สนใจไปพัฒนาตนเอง
+
+                และต่อยอดสู่การศึกษาในระดับมหาวิทยาลัย
+
+                เพื่อสร้างความรู้และประสบการณ์
+
+                ที่สามารถนำไปใช้ในอนาคตได้อย่างมีประโยชน์
+
+            </p>
+
+        </section>
+
     </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        © 2026 พิชามญชุ์ รอดมา | Portfolio
+
+    </footer>
 
 </body>
 
