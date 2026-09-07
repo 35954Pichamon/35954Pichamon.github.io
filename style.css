@@ -899,3 +899,400 @@ footer {
     }
 
 }
+/* =========================
+
+   COVER PAGE
+
+========================= */
+
+.cover {
+
+    min-height: calc(100vh - 70px);
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: linear-gradient(135deg, #eef7ff 0%, #ffffff 48%, #dceeff 100%);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 55px 8%;
+
+}
+
+.cover-content {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+/* ข้อความ */
+
+.cover-text {
+
+    flex: 1;
+
+    max-width: 570px;
+
+}
+
+.small-title {
+
+    font-size: 17px;
+
+    letter-spacing: 4px;
+
+    color: #3978a8;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+
+}
+
+.cover-text h1 {
+
+    font-size: clamp(42px, 5vw, 65px);
+
+    color: #173f5f;
+
+    margin: 0;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+}
+
+.line {
+
+    width: 90px;
+
+    height: 5px;
+
+    background: #4e91bd;
+
+    border-radius: 10px;
+
+    margin: 22px 0;
+
+}
+
+.welcome {
+
+    color: #527087;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+}
+
+.cover-text h2 {
+
+    color: #173f5f;
+
+    font-size: 32px;
+
+    margin: 5px 0;
+
+}
+
+.student {
+
+    color: #668295;
+
+    font-size: 15px;
+
+    margin-bottom: 28px;
+
+}
+
+.cover-button {
+
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #28658f;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    box-shadow: 0 8px 20px rgba(40, 101, 143, 0.22);
+
+    transition: 0.3s;
+
+}
+
+.cover-button:hover {
+
+    transform: translateY(-3px);
+
+    background: #174e73;
+
+}
+
+/* =========================
+
+   รูปโปรไฟล์
+
+========================= */
+
+.cover-photo {
+
+    width: 390px;
+
+    min-width: 390px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    position: relative;
+
+}
+
+.photo-frame {
+
+    width: 330px;
+
+    height: 390px;
+
+    background: white;
+
+    padding: 12px;
+
+    border-radius: 170px 170px 30px 30px;
+
+    box-shadow: 0 20px 45px rgba(39, 91, 123, 0.20);
+
+    border: 5px solid #ffffff;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+.photo-frame img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    /* สำคัญ: ไม่ตัดหน้า */
+
+    object-fit: contain;
+
+    /* ทำให้รูปอยู่ตรงกลาง */
+
+    object-position: center;
+
+    border-radius: 150px 150px 20px 20px;
+
+    background: #f5f9fc;
+
+}
+
+.photo-label {
+
+    margin-top: -20px;
+
+    z-index: 5;
+
+    background: #28658f;
+
+    color: white;
+
+    padding: 10px 30px;
+
+    border-radius: 30px;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    box-shadow: 0 7px 18px rgba(40, 101, 143, 0.2);
+
+}
+
+/* =========================
+
+   ตกแต่งพื้นหลัง
+
+========================= */
+
+.circle {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    z-index: 1;
+
+}
+
+.circle-1 {
+
+    width: 280px;
+
+    height: 280px;
+
+    background: rgba(111, 177, 216, 0.15);
+
+    top: -100px;
+
+    right: -70px;
+
+}
+
+.circle-2 {
+
+    width: 180px;
+
+    height: 180px;
+
+    background: rgba(61, 133, 177, 0.10);
+
+    bottom: -60px;
+
+    left: -50px;
+
+}
+
+.dot-pattern {
+
+    position: absolute;
+
+    width: 130px;
+
+    height: 130px;
+
+    right: 4%;
+
+    bottom: 12%;
+
+    opacity: 0.35;
+
+    background-image: radial-gradient(#4e91bd 2px, transparent 2px);
+
+    background-size: 18px 18px;
+
+}
+
+/* =========================
+
+   FOOTER
+
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 15px;
+
+    color: #668295;
+
+    font-size: 13px;
+
+    background: white;
+
+}
+
+/* =========================
+
+   มือถือ / หน้าจอเล็ก
+
+========================= */
+
+@media (max-width: 850px) {
+
+    .cover {
+
+        padding: 45px 25px;
+
+    }
+
+    .cover-content {
+
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        gap: 30px;
+
+    }
+
+    .cover-text {
+
+        max-width: 100%;
+
+    }
+
+    .line {
+
+        margin: 18px auto;
+
+    }
+
+    .cover-photo {
+
+        width: 300px;
+
+        min-width: 300px;
+
+    }
+
+    .photo-frame {
+
+        width: 260px;
+
+        height: 310px;
+
+    }
+
+    .cover-text h1 {
+
+        font-size: 42px;
+
+    }
+
+    .cover-text h2 {
+
+        font-size: 27px;
+
+    }
+
+}
