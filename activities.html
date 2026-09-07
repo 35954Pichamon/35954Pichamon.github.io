@@ -8,167 +8,663 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>กิจกรรมและผลงาน | พิชามญชุ์ รอดมา</title>
+    <title>ผลงานและกิจกรรม | พิชามญชุ์ รอดมา</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+
+          href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap">
+
+    <style>
+
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            margin: 0;
+
+            font-family: "Kanit", sans-serif;
+
+            background: #f4faff;
+
+            color: #245d80;
+
+        }
+
+        /* ================= NAVBAR ================= */
+
+        .navbar {
+
+            height: 72px;
+
+            margin: 22px 4%;
+
+            padding: 0 35px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            background: white;
+
+            border-radius: 20px;
+
+            box-shadow: 0 5px 20px rgba(45, 100, 135, 0.08);
+
+            position: relative;
+
+            z-index: 10;
+
+        }
+
+        .logo {
+
+            color: #28658c;
+
+            text-decoration: none;
+
+            font-size: 23px;
+
+            font-weight: 600;
+
+            letter-spacing: 2px;
+
+        }
+
+        nav {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 25px;
+
+        }
+
+        nav a {
+
+            color: #527489;
+
+            text-decoration: none;
+
+            font-size: 15px;
+
+            padding: 9px 15px;
+
+            border-radius: 25px;
+
+            transition: 0.25s;
+
+        }
+
+        nav a:hover,
+
+        nav a.active {
+
+            color: #21618c;
+
+            background: #e4f2fc;
+
+        }
+
+        /* ================= HEADER ================= */
+
+        .page-header {
+
+            text-align: center;
+
+            padding: 45px 20px 25px;
+
+        }
+
+        .page-header p {
+
+            margin: 0 0 8px;
+
+            color: #5c9ac0;
+
+            font-size: 15px;
+
+            letter-spacing: 4px;
+
+        }
+
+        .page-header h1 {
+
+            margin: 0;
+
+            color: #1e5478;
+
+            font-size: 42px;
+
+            font-weight: 600;
+
+        }
+
+        .page-line {
+
+            width: 65px;
+
+            height: 4px;
+
+            margin: 15px auto;
+
+            background: #72acd0;
+
+            border-radius: 10px;
+
+        }
+
+        .page-header span {
+
+            color: #78909f;
+
+            font-size: 15px;
+
+        }
+
+        /* ================= CONTENT ================= */
+
+        .activities {
+
+            width: 90%;
+
+            max-width: 1100px;
+
+            margin: 20px auto 70px;
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 28px;
+
+            position: relative;
+
+        }
+
+        /* ================= CARD ================= */
+
+        .activity-card {
+
+            background: white;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            box-shadow: 0 8px 25px rgba(45, 100, 135, 0.09);
+
+            border: 1px solid #e4f1f8;
+
+            transition: 0.25s;
+
+        }
+
+        .activity-card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 15px 30px rgba(45, 100, 135, 0.14);
+
+        }
+
+        /* ================= IMAGE ================= */
+
+        .activity-image {
+
+            width: 100%;
+
+            height: 230px;
+
+            display: block;
+
+            object-fit: cover;
+
+            background: #eaf5fb;
+
+        }
+
+        /* ================= TEXT ================= */
+
+        .activity-content {
+
+            padding: 22px 24px 25px;
+
+        }
+
+        .number {
+
+            display: inline-block;
+
+            padding: 4px 12px;
+
+            margin-bottom: 10px;
+
+            background: #e5f3fb;
+
+            color: #397da5;
+
+            border-radius: 20px;
+
+            font-size: 12px;
+
+        }
+
+        .activity-content h2 {
+
+            margin: 0 0 12px;
+
+            color: #235d80;
+
+            font-size: 21px;
+
+            font-weight: 500;
+
+            line-height: 1.5;
+
+        }
+
+        .activity-content p {
+
+            margin: 0;
+
+            color: #687f8d;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+
+        }
+
+        /* ================= DECORATION ================= */
+
+        .decor-1 {
+
+            position: fixed;
+
+            width: 220px;
+
+            height: 220px;
+
+            border-radius: 50%;
+
+            background: #e5f4fc;
+
+            right: -110px;
+
+            top: 160px;
+
+            z-index: -1;
+
+        }
+
+        .decor-2 {
+
+            position: fixed;
+
+            width: 180px;
+
+            height: 180px;
+
+            border-radius: 50%;
+
+            background: #eaf7fd;
+
+            left: -100px;
+
+            bottom: 30px;
+
+            z-index: -1;
+
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+
+            text-align: center;
+
+            padding: 18px;
+
+            background: white;
+
+            color: #7895a5;
+
+            font-size: 12px;
+
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 800px) {
+
+            .navbar {
+
+                height: auto;
+
+                margin: 12px;
+
+                padding: 15px;
+
+                flex-direction: column;
+
+                gap: 10px;
+
+            }
+
+            nav {
+
+                gap: 4px;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+            }
+
+            nav a {
+
+                font-size: 12px;
+
+                padding: 7px 9px;
+
+            }
+
+            .page-header {
+
+                padding-top: 30px;
+
+            }
+
+            .page-header h1 {
+
+                font-size: 34px;
+
+            }
+
+            .activities {
+
+                grid-template-columns: 1fr;
+
+                width: 92%;
+
+                gap: 20px;
+
+            }
+
+            .activity-image {
+
+                height: 220px;
+
+            }
+
+        }
+
+    </style>
 
 </head>
 
 <body>
 
+<!-- ================= NAVBAR ================= -->
+
 <header class="navbar">
 
-    <a href="/" class="logo">PORTFOLIO</a>
+    <a href="index.html" class="logo">
+
+        PORTFOLIO
+
+    </a>
 
     <nav>
 
-        <a href="/">หน้าแรก</a>
+        <a href="index.html">
 
-        <a href="profile.html">ประวัติส่วนตัว</a>
+            หน้าแรก
 
-        <a href="interest.html">ความสนใจ</a>
+        </a>
 
-        <a href="activities.html" class="active">กิจกรรมและผลงาน</a>
+        <a href="profile.html">
 
-        <a href="contact.html">ติดต่อ</a>
+            ประวัติส่วนตัว
+
+        </a>
+
+        <a href="interest.html" class="active">
+
+            ความสนใจ
+
+        </a>
+
+        <a href="activities.html">
+
+            กิจกรรมและผลงาน
+
+        </a>
+
+        <a href="contact.html">
+
+            ติดต่อ
+
+        </a>
 
     </nav>
 
 </header>
 
-<main class="page">
+<!-- ================= DECORATION ================= -->
 
-    <section class="page-title">
+<div class="decor-1"></div>
 
-        <p class="small-title">
+<div class="decor-2"></div>
 
-            ACTIVITIES & WORKS
+<!-- ================= HEADER ================= -->
 
-        </p>
+<section class="page-header">
 
-        <h1>
+    <p>MY ACHIEVEMENTS</p>
 
-            กิจกรรมและผลงาน
+    <h1>ผลงานและกิจกรรม</h1>
 
-        </h1>
+    <div class="page-line"></div>
 
-        <p>
+    <span>
 
-            ประสบการณ์ที่ได้เรียนรู้และพัฒนาตนเอง
+        ผลงาน ประสบการณ์ และกิจกรรมที่ภาคภูมิใจ
 
-        </p>
+    </span>
 
-    </section>
+</section>
 
-    <section class="activity-list">
+<!-- ================= ACTIVITIES ================= -->
 
-        <div class="activity">
+<section class="activities">
+
+    <!-- ผลงานที่ 1 -->
+
+    <article class="activity-card">
+
+        <img
+
+            src="airplane.jpg"
+
+            alt="การแข่งขันเครื่องบินพลังยาง"
+
+            class="activity-image"
+
+        >
+
+        <div class="activity-content">
+
+            <span class="number">
+
+                ผลงานที่ 01
+
+            </span>
 
             <h2>
 
-                กิจกรรมดูแลสัตว์
+                การแข่งขันเครื่องบินพลังยาง
 
             </h2>
 
             <p>
 
-                ได้เรียนรู้การดูแลสัตว์ การสังเกตพฤติกรรม
+                ได้รับรางวัลเหรียญทอง 2 ปีซ้อน
 
-                และการรับผิดชอบต่อสัตว์
+                ทั้งในระดับภาคและระดับประเทศ
 
-                ทำให้เข้าใจความสำคัญของการดูแลสัตว์มากขึ้น
+                จากการแข่งขันเครื่องบินพลังยาง
 
             </p>
 
         </div>
 
-        <div class="activity">
+    </article>
+
+    <!-- ผลงานที่ 2 -->
+
+    <article class="activity-card">
+
+        <img
+
+            src="poster.jpg"
+
+            alt="การนำเสนอผลงานโครงงานนวัตกรรม"
+
+            class="activity-image"
+
+        >
+
+        <div class="activity-content">
+
+            <span class="number">
+
+                ผลงานที่ 02
+
+            </span>
 
             <h2>
 
-                กิจกรรมจิตอาสา
+                การนำเสนอผลงานโครงงานนวัตกรรม
 
             </h2>
 
             <p>
 
-                เข้าร่วมกิจกรรมที่ช่วยเหลือผู้อื่น
+                ได้รับรางวัลชนะเลิศ อันดับ 2
 
-                ได้ฝึกการทำงานร่วมกับผู้อื่น
+                จากการประกวดแข่งขันการนำเสนอผลงาน
 
-                และเรียนรู้ความรับผิดชอบ
+                โครงงานนวัตกรรมในรูปแบบโปสเตอร์
 
             </p>
 
         </div>
 
-        <div class="activity">
+    </article>
+
+    <!-- ผลงานที่ 3 -->
+
+    <article class="activity-card">
+
+        <img
+
+            src="student-council-award.jpg"
+
+            alt="การแข่งขันกิจกรรมสภานักเรียน"
+
+            class="activity-image"
+
+        >
+
+        <div class="activity-content">
+
+            <span class="number">
+
+                ผลงานที่ 03
+
+            </span>
 
             <h2>
 
-                กิจกรรมสภานักเรียน
+                การแข่งขันกิจกรรมสภานักเรียน
 
             </h2>
 
             <p>
 
-                ได้ฝึกการทำงานเป็นทีม
+                ได้รับรางวัลเหรียญทอง
 
-                การสื่อสาร การวางแผน
+                กิจกรรมการแข่งขันกิจกรรมสภานักเรียน
 
-                และการรับผิดชอบงานที่ได้รับมอบหมาย
+                ระดับชั้น ม.1 - ม.6
+
+                งานศิลปหัตถกรรมนักเรียน ครั้งที่ 73
+
+                ปีการศึกษา 2568
 
             </p>
 
         </div>
 
-        <div class="activity">
+    </article>
+
+    <!-- ผลงานที่ 4 -->
+
+    <article class="activity-card">
+
+        <img
+
+            src="student-council.jpg"
+
+            alt="คณะกรรมการสภานักเรียน"
+
+            class="activity-image"
+
+        >
+
+        <div class="activity-content">
+
+            <span class="number">
+
+                ผลงานที่ 04
+
+            </span>
 
             <h2>
 
-                การพัฒนาทักษะภาษาอังกฤษ
+                คณะกรรมการสภานักเรียน
 
             </h2>
 
             <p>
 
-                ฝึกการสื่อสารภาษาอังกฤษ
+                ได้ปฏิบัติหน้าที่คณะกรรมการ
 
-                และพัฒนาทักษะการใช้ภาษา
+                สภานักเรียน ประจำปีการศึกษา 2568
 
-                เพื่อนำไปใช้ในการเรียนและอนาคต
+                มีส่วนร่วมในการดำเนินงาน
 
-            </p>
-
-        </div>
-
-        <div class="activity">
-
-            <h2>
-
-                ผลงานด้านการเรียนรู้
-
-            </h2>
-
-            <p>
-
-                ตั้งใจเรียนและค้นคว้าหาความรู้เพิ่มเติม
-
-                รวมถึงนำความรู้จากบทเรียนมาประยุกต์ใช้
-
-                ในการทำกิจกรรมและโครงงาน
+                และกิจกรรมต่าง ๆ ของโรงเรียน
 
             </p>
 
         </div>
 
-    </section>
+    </article>
 
-</main>
+</section>
 
 <footer>
 
-    © 2026 พิชามญชุ์ รอดมา | Portfolio
+    © 2026 Pichamon Rodma | Portfolio
 
 </footer>
 
