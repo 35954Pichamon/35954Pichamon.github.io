@@ -1,1 +1,261 @@
+<!DOCTYPE html>
 
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ความสนใจ | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        PORTFOLIO
+
+    </a>
+
+    <button class="menu-btn">☰</button>
+
+    <nav>
+
+        <a href="index.html">หน้าแรก</a>
+
+        <a href="profile.html">ประวัติส่วนตัว</a>
+
+        <a href="interest.html" class="active">ความสนใจ</a>
+
+        <a href="activities.html">กิจกรรมและผลงาน</a>
+
+        <a href="contact.html">ติดต่อ</a>
+
+    </nav>
+
+</header>
+
+<main class="page">
+
+    <!-- หัวข้อ -->
+
+    <section class="page-title">
+
+        <p class="small-title">
+
+            MY INTERESTS
+
+        </p>
+
+        <h1>
+
+            ความสนใจของฉัน
+
+        </h1>
+
+        <p>
+
+            สิ่งที่ฉันสนใจและอยากเรียนรู้เพิ่มเติม
+
+        </p>
+
+    </section>
+
+    <!-- ความสนใจ -->
+
+    <section class="interest-grid">
+
+        <div class="interest-card">
+
+            <div class="interest-icon">
+
+                🐶
+
+            </div>
+
+            <h2>
+
+                สัตว์และการดูแลสัตว์
+
+            </h2>
+
+            <p>
+
+                ฉันสนใจเกี่ยวกับสัตว์ ชอบเรียนรู้พฤติกรรม
+
+                การดูแลสุขภาพ และการดูแลสัตว์ให้มีคุณภาพชีวิตที่ดี
+
+            </p>
+
+        </div>
+
+        <div class="interest-card">
+
+            <div class="interest-icon">
+
+                🩺
+
+            </div>
+
+            <h2>
+
+                สัตวแพทยศาสตร์
+
+            </h2>
+
+            <p>
+
+                สนใจการเรียนรู้เกี่ยวกับการรักษาโรค
+
+                การป้องกันโรค และการดูแลสุขภาพของสัตว์
+
+            </p>
+
+        </div>
+
+        <div class="interest-card">
+
+            <div class="interest-icon">
+
+                🔬
+
+            </div>
+
+            <h2>
+
+                วิทยาศาสตร์
+
+            </h2>
+
+            <p>
+
+                สนใจการทดลองและการค้นคว้าทางวิทยาศาสตร์
+
+                รวมถึงการนำความรู้มาใช้ในการแก้ปัญหา
+
+            </p>
+
+        </div>
+
+        <div class="interest-card">
+
+            <div class="interest-icon">
+
+                📚
+
+            </div>
+
+            <h2>
+
+                การเรียนรู้
+
+            </h2>
+
+            <p>
+
+                ชอบเรียนรู้สิ่งใหม่ ๆ และพัฒนาความรู้
+
+                เพื่อนำไปต่อยอดในการเรียนและการทำงานในอนาคต
+
+            </p>
+
+        </div>
+
+        <div class="interest-card">
+
+            <div class="interest-icon">
+
+                🌱
+
+            </div>
+
+            <h2>
+
+                การพัฒนาตนเอง
+
+            </h2>
+
+            <p>
+
+                ให้ความสำคัญกับการพัฒนาทักษะของตนเอง
+
+                ทั้งด้านการเรียน การสื่อสาร และการทำงานร่วมกับผู้อื่น
+
+            </p>
+
+        </div>
+
+        <div class="interest-card">
+
+            <div class="interest-icon">
+
+                💙
+
+            </div>
+
+            <h2>
+
+                งานอาสา
+
+            </h2>
+
+            <p>
+
+                สนใจการทำกิจกรรมเพื่อช่วยเหลือผู้อื่น
+
+                และเรียนรู้ประสบการณ์จากการทำงานร่วมกับคนอื่น
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- เป้าหมาย -->
+
+    <section class="interest-goal">
+
+        <h2>
+
+            เป้าหมายของฉัน
+
+        </h2>
+
+        <p>
+
+            ฉันต้องการนำสิ่งที่สนใจไปพัฒนาตนเอง
+
+            และต่อยอดสู่การศึกษาในระดับมหาวิทยาลัย
+
+            เพื่อสร้างความรู้และประสบการณ์ที่สามารถนำไปใช้
+
+            ในอนาคตได้อย่างมีประโยชน์
+
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+
+        © 2026 My Portfolio
+
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
