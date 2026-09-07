@@ -1,32 +1,99 @@
-<!-- นี่คือโครงสร้างหน้าเว็บทังหมด ้ -->
 <!DOCTYPE html>
+
 <html lang="th">
+
 <head>
-<meta charset="UTF-8">
-<title>หน้าแนะน;าตัวของฉัน</title>
-<style>
-body {
-background-color: #D4049E; color: #333;
-text-align: center; padding: 50px;
 
-}
-.card {
-background: white; border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-max-width: 500px; margin: 0 auto; padding: 30px;
+    <meta charset="UTF-8">
 
-}
-h1 { color: #2c3e50; }
-p { font-size: 18px; line-height: 1.6; }
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>หน้าแรก | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-<div class="card">
-<h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน </h1>
-<p>สวัสดีค่ะ! ฉันชื่อ <strong>พิชามญชุ์ รอดมา (Pichamon Rodma)</strong></p>
-<p>ขณะนี้ก;าลังศึกษา/สนใจด้าน วิทย์ศาสตร์สุขภาพ</p>
-<p>นี่คือเว็บไซต์แรกของฉันที่โฮสต์บน GitHub Pages!</p>
- <a href="portfolio.html" style="display:inline-block; background:#3498db; color:white; padding:10px 20px; text-decoration:none: border-radius:5px; margin-top:15px;">ดูแฟ้มสะสมงานของดิฉัน</a>
-</div>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">PORTFOLIO</a>
+
+    <button class="menu-btn">☰</button>
+
+    <nav>
+
+        <a href="index.html" class="active">หน้าแรก</a>
+
+        <a href="profile.html">ประวัติส่วนตัว</a>
+
+        <a href="interest.html">ความสนใจ</a>
+
+        <a href="activities.html">กิจกรรมและผลงาน</a>
+
+        <a href="contact.html">ติดต่อ</a>
+
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <p class="eyebrow">MY PORTFOLIO</p>
+
+        <h1>
+
+            สวัสดีค่ะ<br>
+
+            <span>ยินดีต้อนรับสู่ Portfolio</span>
+
+        </h1>
+
+        <p>
+
+            เว็บไซต์รวบรวมประวัติส่วนตัว
+
+            ความสนใจ กิจกรรม และผลงาน
+
+            เพื่อแนะนำตัวตนและเส้นทางการเรียนรู้ของฉัน
+
+        </p>
+
+        <a href="profile.html" class="btn">
+
+            รู้จักฉันมากขึ้น →
+
+        </a>
+
+    </div>
+
+    <div class="cover">
+
+        <div class="photo">
+
+            ใส่รูปหน้าปกของคุณที่นี่
+
+        </div>
+
+        <h3>ชื่อ - นามสกุล</h3>
+
+        <p>Student Portfolio</p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    © 2026 My Portfolio
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
